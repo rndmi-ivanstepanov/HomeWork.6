@@ -59,11 +59,12 @@ public class Loops {
         System.out.println("task 4 ");
         int deposit = 15000;
         int month = 1;
-        int stash = 0;
+        double stash = 0;
 
         while (stash < 12000000) {
             stash = (((stash + deposit) * 7) / 100) + stash + deposit;
-            System.out.println("Month: " + month + "th - stash is " + stash);
+            System.out.printf("Month: " + month + "th - stash is %.2f", stash);
+            System.out.println();
             month++;
         }
         System.out.println();
@@ -73,12 +74,13 @@ public class Loops {
         System.out.println("task 5 ");
         int deposit = 15000;
         int month = 1;
-        int stash = 0;
+        double stash = 0;
 
         while (stash < 12000000) {
             stash = (((stash + deposit) * 7) / 100) + stash + deposit;
             if (month % 6 == 0) {
-                System.out.println("Month: " + month + "th - stash is " + stash);
+                System.out.printf("Month: " + month + "th - stash is %.2f", stash);
+                System.out.println();
             }
             month++;
         }
@@ -89,13 +91,14 @@ public class Loops {
         System.out.println("task 6 ");
         int deposit = 15000;
         int month = 1;
-        int stash = 0;
+        double stash = 0;
 
         while (month <= (9 * 12)) {
             stash = (((stash + deposit) * 7) / 100) + stash + deposit;
 
             if (month % 6 == 0) {
-                System.out.println("Month: " + month + "th - stash is " + stash);
+                System.out.printf("Month: " + month + "th - stash is %.2f", stash);
+                System.out.println();
             }
             month++;
         }
